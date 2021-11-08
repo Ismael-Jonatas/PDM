@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutNovaCor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    //********************************************************************
+
+    <LinearLayout
+        android:id="@+id/tvColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvCodColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pratica-03"
+                android:textSize="35dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    //********************************************************************
+
+    <GridLayout
+
+        android:layout_marginRight="@android:dimen/notification_large_icon_height"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:columnCount="2">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tsb0"
+            android:textColor="#ff3a53"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:padding="5dp"
+            android:text="0"/>
+
+        <SeekBar
+            android:padding="@android:dimen/app_icon_size"
+            android:id="@+id/tvSb_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:min="0"
+            android:progress="0"
+            android:progressTint="#ff3a53"
+            android:thumbTint="#ff3a53"/>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_marginRight="@android:dimen/notification_large_icon_height"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:columnCount="2">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tsb1"
+            android:textColor="#6fff6e"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:padding="5dp"
+            android:text="0" />
+
+
+        <SeekBar
+            android:padding="@android:dimen/app_icon_size"
+            android:id="@+id/tvSb_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:max="255"
+            android:progressTint="#6fff6e"
+            android:thumbTint="#6fff6e"/>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_marginRight="@android:dimen/notification_large_icon_height"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:columnCount="2">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tsb2"
+            android:textColor="#87CEEB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:padding="5dp"
+            android:text="0" />
+
+        <SeekBar
+            android:id="@+id/tvSb_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:max="255"
+            android:padding="@android:dimen/app_icon_size"
+            android:progress="0"
+            android:progressTint="#87CEEB"
+            android:thumbTint="#87CEEB" />
+
+    </GridLayout>
+
+    //********************************************************************
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_marginRight="20dp"
+            android:id="@+id/btSalvar"
+            android:text="Salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btCancelar"
+            android:text="Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

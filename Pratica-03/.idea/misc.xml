@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/projectandroid/Pratica-02/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/projectandroid/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/projectandroid/Pratica-03/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/projectandroid/Pratica-03/app/src/main/res/layout/activity_rbg.xml" value="0.17806484295845998" />
+        <entry key="..\:/projectandroid/Pratica-03/app/src/main/res/layout/activity_rgb.xml" value="0.33" />
       </map>
     </option>
   </component>
