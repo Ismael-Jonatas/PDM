@@ -50,6 +50,7 @@
             android:progress="127"
             android:progressTint="#ff3a53"
             android:thumbTint="#ff3a53"/>
+
     </GridLayout>
 
     <GridLayout
