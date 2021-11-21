@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.SeekBar
 import android.widget.TextView
-import kotlin.properties.Delegates
+
 
 class EscolherCorRGB : AppCompatActivity() {
     private lateinit var seekBar: SeekBar
@@ -41,8 +41,8 @@ class EscolherCorRGB : AppCompatActivity() {
         this.seekBar1.setOnSeekBarChangeListener(OnChange())
         this.seekBar2.setOnSeekBarChangeListener(OnChange())
 
-        this.corTela.setBackgroundColor(retornacor())
-        this.codCor.setText(Integer.toHexString(retornacor()).subSequence(2,8))
+        this.corTela.setBackgroundColor(retornaCor())
+        this.codCor.setText(Integer.toHexString(retornaCor()).subSequence(2,8))
 
 
         this.btSalvar.setOnClickListener { salvar() }
@@ -53,7 +53,7 @@ class EscolherCorRGB : AppCompatActivity() {
     }
 
     private fun salvar(){
-        val cordavez = retornacor()
+        val cordavez = retornaCor()
         val intent = Intent().apply {
             putExtra("CORES", cordavez)
         }
@@ -61,7 +61,7 @@ class EscolherCorRGB : AppCompatActivity() {
         finish()
     }
 
-    fun retornacor(): Int {
+    fun retornaCor(): Int {
         val cores = Color.rgb(this.seekBar.progress, seekBar1.progress, seekBar2.progress)
         return cores
     }
@@ -79,8 +79,8 @@ class EscolherCorRGB : AppCompatActivity() {
             progressSb1.setText(""+ii)
             progressSb2.setText(""+iii)
 
-            corTela.setBackgroundColor(retornacor())
-            codCor.setText(Integer.toHexString(retornacor()).subSequence(2,8))
+            corTela.setBackgroundColor(retornaCor())
+            codCor.setText(Integer.toHexString(retornaCor()).subSequence(2,8))
 
             fun retornacor(): Int {
                 val cores = Color.rgb(this@EscolherCorRGB.seekBar.progress, seekBar1.progress, seekBar2.progress)
